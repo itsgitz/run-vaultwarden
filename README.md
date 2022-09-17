@@ -7,9 +7,18 @@ Just a simple linux bash script for create or run [Vaultwarden](https://github.c
 # Usage
 1. Make the script executable with `chmod` command:
 ```
-$ chmod +x run.sh
+$ chmod +x build.sh
 ```
-2. Open vaultwarden application on browser by accessing http://localhost:8000 (check  the`CONTAINER_PORT` variable on `run.sh` script file)
+3. Run the vaultwarden
+```
+$ make build
+```
+4. Open vaultwarden application on browser by accessing http://localhost:8000 (check  the`CONTAINER_PORT` variable on `run.sh` script file)
+5. For stop or start the container
+```
+$ make stop # stop the container
+$ make run # run or start the container
+```
 
 # Contributor
 Anggit M Ginanjar
